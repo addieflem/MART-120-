@@ -1,0 +1,42 @@
+body {
+    background-color: #f5f0e8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+hi {
+    color: #7a4005;
+    text-align: center;
+}
+h2 {
+    color: #946b45;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+    .highlight {
+        color: #8b3a62;
+        font-weight: bold;
+        background-color: #ffe4e1;
+    }
+    #main-title {
+        text-decoration: underline;
+    }
+    #story-title {
+        text-align: center;
+        color: purple;
+    }
+    .story-page {
+        background-image: url("images/background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+.story-page,
+.story-page h1,
+.story-page h2,
+.story-page p,
+.story-page a {
+    color: white;
+}
