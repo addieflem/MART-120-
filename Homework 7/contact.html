@@ -7,16 +7,34 @@
    </head> 
    <body class="container mt-4">
     <h1>Contact us</h1>
-    <form>
+    <form id="contactForm" novalidate>
         <label>Name:</label>
-        <input type="text" name="name" class="form-control">
+        <input type="text" name="name" class="form-control" required>
         <label>Email:</label>
-        <input type="email" name="email" class="form-control">
+        <input type="email" name="email" class="form-control" required>
         <label>Accept Terms:</label>
-        <input type="checkbox" name="terms" class="form-check-input">
-        </form>
+        <input type="checkbox" name="terms" class="form-check-input" required>
+        <button type="submit"> Submit</button>
+      </form>
         <a href="index.html">Home</a>
         <a href="story.html">My Story</a>
-        </body>
+        <script>
+         document.getElementById("contactForm").addEventListener("submit", function(event) {
+event.preventDefault();
+const nameInput = document.querySelector('input[name="name"]');
+if (nameInput.value.trim() ===""){
+   nameInput.style.backgroundColor ="red";
+} else {
+   nameInput.style.backgroundColor = "white"
+}
+const emailInput = document.querySelector('input[name="email"]');
+if (emailInput.value.trim() === "") {
+   emailInput.style.backgroundColor = "red";
+} else {
+   emailInput.style.backgroundColor = "white";
+}
+         });
+        </script>
+      </body>
 </html>
    
